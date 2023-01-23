@@ -3,11 +3,11 @@ import QuoteButton from "./QuoteButton";
 
 const QuoteBox = ({ quote, newQuote, color }) => {
   return (
-    <div style={{ color: color }}>
-      <p> {quote.quote}</p>
-      <h3>{quote.author} </h3>
-      <i className="bx bxs-quote-left"></i>
-      <QuoteButton newQuote={newQuote} color={color} />
+    <div className="quoteBox" style={{ color: color }}>
+      <p className="quoteBox__quote"> {quote.quote}</p>
+      <h3 className="quoteBox__autor">{quote.author} </h3>
+      <i className="quoteBox__icon bx bxs-quote-left"></i>
+      <QuoteButton color={color} newQuote={newQuote} />
     </div>
   );
 };
